@@ -44,7 +44,22 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+}
 
+/* 로그인/회원가입 위치설정 */
+.top{
+    position: relative;
+    float: right;
+    
+    background-color: aqua;
+}
+
+/* 로그인/회원가입 글씨설정 */
+
+.top a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
     
 }
 
@@ -65,6 +80,7 @@ header .navbar ul{
 header .navbar ul li{
     position: relative;
     float:right;
+    background-color: red;
 }
 
 /* 앵커요소 설정 글씨 설정 */
@@ -108,7 +124,7 @@ header .navbar ul li ul li ul{
 
 
 header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul {
+header .navbar ul li:hover > ul{
     display: initial;
 } 
 
@@ -141,6 +157,11 @@ header label{
    데스크탑 디바이스 (가로해상도가 992px 보다 작은 화면에 적용) 
    여담으로 모바일은 min-with */
 @media(max-width:991px){
+
+    /* 로그인/회원가입 화면 숨김 */
+    .top {
+        display: none;
+    }
 
     header{
         padding: 20px;
@@ -179,6 +200,10 @@ header label{
     }
 
     #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    #menu-bar .top ~ .a{
         display: initial;
     }
 
