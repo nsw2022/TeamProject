@@ -6,13 +6,17 @@
     text-transform: capitalize;
     text-decoration: none;
 }
+
+
+
+
 /*바디영역 임시로 채움 */
-body{
+/* body{
     height: 100vh;
     background:url(../image/hall-img-1.webp) no-repeat;
     background-size: cover;
     background-position: center;
-} 
+}  */
 /* html, body{
     height: 100%;
 }
@@ -27,7 +31,7 @@ body{
 
 /*
 box-shadow : 요소의 테두리를 감싼 그림자 정의가 가능합니다
-justify-content Day05의 05_flex-style Item들을 보통 균듕하게 할때 쓰는데 첫째랑 마지막째로 나누려고 사용했습니다
+justify-content Day05의 05_flex-style Item들을 보통 균듕하게 할때 쓰는데 첫째랑 마지막째로 나누려고 사용했습니다 -> end로 수정
 z-index 요소의 쌓임 순서를 정의할 수 있습니다 1000안넣고 1만넣어도 위로가져요 바디영역보다 위에 쌓아서 확인해보려했습니다
 */
 header{
@@ -36,10 +40,12 @@ header{
     background: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
     padding: 0px 7%;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+
+    
 }
 
 /* 로고설정 */
@@ -55,10 +61,10 @@ header .navbar ul{
     list-style: none;
 }
 
-/* 포지션을바꾸고 정렬했습니다 */
+/* 포지션을바꾸고 정렬했습니다 float left 가 이쁘긴한데 방법 갈수*/
 header .navbar ul li{
     position: relative;
-    float: left;
+    float:right;
 }
 
 /* 앵커요소 설정 글씨 설정 */
@@ -110,6 +116,7 @@ header .navbar ul li:hover > ul {
 /* #menu-bar 사라졌다가 모바일 화면에선 나오게설정  */
 #menu-bar{
     display: none;
+    
 }
 
 header label{
@@ -118,6 +125,16 @@ header label{
     cursor: pointer;
     display: none;
 }
+
+
+/* W3School 설정구역~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.w3-container div img{
+    margin-top: 150px;
+}
+
+
+/* W3School 설정구역~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 /* 데스크탑우선으로 짜봤어요 최대~까지 적용 느낌이에요 
@@ -131,10 +148,12 @@ header label{
 
     header label{
         display: initial;
+        position:absolute;
+        right: 30px;
     }
 
     header .navbar{
-        position: absolute;
+        position:absolute;
         top: 100%; left: 0; right: 0;
         background: #fff;
         border-top: 1px solid rgba(0, 0, 0, 1);
