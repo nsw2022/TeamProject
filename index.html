@@ -1,52 +1,197 @@
 <!DOCTYPE html>
 <html>
-    <!-- 1. 화면에 안보이는 영역 설정 -->
-    <head>
-        <title>My Web Page</title>
-        <!-- 기본적으로 한글은 깨짐. 이를 방지하기 위해  -->
-        <meta charset="utf-8">
 
-        <!-- 스타일작업 : CSS -->
-        <!-- <style>
-            /* 이 영역안에서는 CSS언어의 문법 체계를 따름 */
-            h2{background-color: yellow;}
-            p{color: #FF0000;}
-            img{width: 150px;}
-        </style> -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
-        <!-- 스타일작업을 별도의 .css 문서에 만들고 적용해보기 -->
-        <!-- 왼쪽의 index.css로 만듬 -->
-        <!-- 적용 -->
-        <link rel="stylesheet" href="./index.css">
+    
+    <!-- css파일 -->
+    <link rel="stylesheet" href="./N/css/style.css">
+    
+    <!-- W3Shool Library-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- 동적 동작 코딩을 위한 Javascript 언어 적용 -->
-        <!-- <script>
-            // 이 영역 안에서는 Javascript 언어 문법 체계를 따름
-            
-            // 함수 정의
-            function show(){
-                alert("로그인 버튼 클릭!");    
+
+
+</head>
+
+<body>
+    <header>
+
+        <a href="" class="logo">Five Man Company</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <!--
+        <div class="top">
+            <ul>
+                <li style="display: inline;"><a href="./01_login.html">Login</a> |</li>
+                <li style="display: inline;"><a href="./signup.html">Join</a></li>
+
+            </ul>
+           
+        </div>
+    -->
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="./H/html/shoppingcart.html">showpping basket</a></li>
+                <li><a href="./D/nav_item_set.html">soccer +</a>
+                    <!-- 여기부분이 좀어려운데 css잠깐 주석처리하고 보시면 바로이해되실껍니다 li안에 ul li 넣어 DropBox처럼 보이려했습니다  -->
+                    <ul>
+                        <li><a href="./D/nav_item_ball.html">ball</a></li>
+                        <li><a href="./D/nav_item_set.html">uniform + </a>
+                            <ul>
+                                <li><a href="./D/nav_item_top.html">Top</a></li>
+                                <li><a href="./D/nav_item_bottom.html">Bottom</a></li>
+                                <li><a href="./D/nav_item_set.html">SET</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./D/nav_item_boot.html">foot bootl +</a>
+                            <ul>
+                                <li><a href="./D/nav_item_boot.html">260</a></li>
+                                <li><a href="./D/nav_item_boot.html">270</a></li>
+                                <li><a href="./D/nav_item_boot.html">280</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">review</a></li>
+                <li><a href="">place</a></li>
+                <li><a href="./J/login.html">Login</a></li>
+                <li><a href="./J/join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow -->
+    <div class="w3-container">
+        <div class="w3-display-container mySlides">
+            <img src="./N/image/sweatsuit.png" style="width: 100%;">
+            <div class="w3-display-topleft w3-container w3-padding-32"></div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="./N/image/sportshoose.png" style="width:100%">
+            <div class="w3-display-middle w3-container w3-padding-32"></div>
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="./N/image/freesize.png" style="width:100%">
+            <div class="w3-display-topright w3-container w3-padding-32"></div>
+        </div>
+
+        <!-- Slideshow next/previous buttons -->
+        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+            <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+            <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
+            </div>
+
+            <div class="w3-center">
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Grid -->
+    <div class="w3-row-padding" id="about">
+        <div class="w3-center w3-padding-64">
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Best Product</span>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="./dummy_data/image/ball1.png" alt="Best1" style="width:100%">
+                <div class="w3-container">
+                    <h3>Best Ball</h3>
+                    <p class="w3-opacity">Ball</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="./dummy_data/image/uni1.png" alt="Mike" style="width:100%">
+                <div class="w3-container">
+                    <h3>uni form</h3>
+                    <p class="w3-opacity">Art Director</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <div class="w3-card-4">
+                <img src="./dummy_data/image/uni8.png" alt="Jane" style="width:100%">
+                <div class="w3-container">
+                    <h3>John Doe</h3>
+                    <p class="w3-opacity">Designer</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <pre>
+                <a href="">개인정보 처리방침</a> | <a href="">사이트 이용약관</a>
+                <a href="">위치 정보 이용약관</a> | <a href="">FCM MemberShip</a>
+            </pre>
+        </div>
+    
+   
+
+        <!-- Footer end. -->
+    </footer>
+    <script>
+        // Slideshow
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demodots");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-            
-        </script> -->
-
-        <!-- JS문서를 별도의 .js문서로 만들어서 적용해보기 -->
-        <script src="./index.js"></script>
-
-    </head>
-
-    <!-- 2. 주소창 아래 화면에 보이는 영역 -->
-    <body>
-
-        <h2>My First Web Page</h2>
-        <p>This is first web page.</p>
-        <p>한글도 표시됨.</p>
-
-        <img src="./sydney.jpg" id="aa">
-        <button onclick="show()">로그인</button>
-        <button onclick="changeImage()">이미지 변경</button>
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
 
 
-    </body>
+
+</body>
 
 </html>
