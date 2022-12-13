@@ -87,6 +87,7 @@
   border: solid 2px black;
   border-radius: 20px;
 }
+
 .btn-primary#s1{
     transition: all 0.2s ease-in-out;
     width: 60%;   
