@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            #col1{                        /*아이디, 비밀번호 글씨 부분*/
+                width: 150px;
+                height: 40px;
+                /*border: 1px solid black;*/    
+                display: flex;                  /*div를 float를 사용했기 때문에 정렬을 위해서 flex로 설정*/
+                justify-content: right;          /*horizontal left */
+                align-items: center;            /*상하 정렬*/
+                font-size: 15px;                /*글씨 사이즈*/
+                font-weight: bold;
+               
+                /*margin-top: 10px;*/
+            }
+
+            #inputText{
+                margin-top: 4px;
+                margin-left: 2em;
+            }
+
+            #LOGIN{                        
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                background-color: rgb(3, 119, 213);
+                color: white;
+                border: 1px solid rgb(3, 119, 213);
+
+
+            }
+            #login_btn{
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                background-color: rgb(3, 119, 213);
+                color: white;
+                border: 1px solid rgb(3, 119, 213);
+
+            }
+
+            #login_btn:hover{
+                background-color: violet;
+                color: white;
+                border: 1px solid white;
+            }
+
+
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>로그인</p>
+        <div style="float: inline-start;">
+            <input type="radio" checked >회원
+            <input type="radio" value="비회원">비회원
+        </div>
+    
+
+            <div id="main2Left" style="float: left;" >
+                <!-- 로그인 입력 부분-->
+                <div style=" float:left" id="col1">
+                    <span>아이디</span>
+                </div>
+                <div style="float: left;" id="inputText">
+                    <input type:text>
+                </div>
+                <div style="clear: both;float: left;" id="leftText"></div>
+                <div style="clear: both;float: left;" id="col1">
+                    <span>비밀번호</span>
+                </div>
+                <div style="float: left;" id="inputText">
+                    <input type:password>
+                </div>
+                <div style="clear: both;float: left;" id="col1"></div>
+
+                <div style="float: left;" id="securityText">
+                    <input type=checkbox style="vertical-align: middle"> 아이디 저장
+                    <input type=checkbox style="vertical-align: middle"> 키보드 보안접속
+                </div>
+            </div>
+        <div id="LOGIN" style="float: left;" > 
+            <input id="login_btn" value="회원 로그인">
+        </div>
+        
+      
+      
+    </body>
+
+
+</html>

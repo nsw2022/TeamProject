@@ -24,27 +24,8 @@ header{
     justify-content: space-between;
     z-index: 1000;
 
-<<<<<<< HEAD
-=======
-/* 로그인/회원가입 위치설정 - 테스트중*/
-/*
-.top{
-    position: relative;
-    float: right;
-    
-    background-color: aqua;
 }
-*/
 
-/* 로그인/회원가입 글씨설정 
-.top a{
-    font-size: 20px;
-    padding: 20px;
-    color: #333;
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
-    
-}
-*/
 
 /* 로고설정 */
 header .logo{
@@ -52,7 +33,6 @@ header .logo{
     font-size: 25px;
     color: #333;
 }
-
 
 /* navbar ul 스타일제거 */
 header .navbar ul{
@@ -63,10 +43,7 @@ header .navbar ul{
 header .navbar ul li{
     position: relative;
     float:right;
-<<<<<<< HEAD
-=======
     background-color: violet;
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
 }
 
 /* 앵커요소 설정 글씨 설정 */
@@ -151,30 +128,6 @@ header label{
    태블릿 768
    여담으로 모바일은 min-with */
 @media(max-width:991px){
-
-<<<<<<< HEAD
-=======
-    /* 로그인/회원가입 화면 숨김 - 테스트중
-   .top{
-        position:absolute;
-        
-        display: none;
-   }
-   */
-
- 
-    
-    /* #menu-bar:checked ~ .top{
-        display: initial;
-       
-    } */
-
-    /* #menu-bar .top ~ .a{
-        display: initial;
-    }  */
-
-
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
     header{
         padding: 20px;
     }
@@ -216,8 +169,6 @@ header label{
         display: initial;
     }
 
-<<<<<<< HEAD
-=======
     #menu-bar .top ~ .a{
         display: initial;
     } 
@@ -225,10 +176,5 @@ header label{
     .w3-container img{
         width: 100%;
     }
-
-   
-
-
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
 
 }
