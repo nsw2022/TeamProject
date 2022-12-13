@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content{
+    max-width: 1000px;
+    margin: 0 auto; 
+  }
+  .container{
+   display: flex;
+   flex-wrap: wrap;
+    gap: 2%;
+  }     
+
+  .card{
+    min-width: 150px;
+    min-height: 300px;
+    flex-basis: 23.5%;
+    flex-shrink: 1;
+    flex-grow: 0;  
+    margin-top: 10px;          
+    margin-bottom: 10px;
+      
+  }
+
+   /* 반응형 웹 CSS - 미디어쿼리
+  /* phone 세로방향 */
+ @media all and (min-width: 320px){
+     .card{
+         flex-basis: 49%;
+     } 
+      
+  }
+        
+
+  /*phone 가로방향 or tablet */
+  @media all and (min-width: 600px){
+     .card{
+           flex-basis: 31%;
+      
+      }
+   
+  }
+
+  /* desktop or tablet-landscape */
+  @media all and (min-width:800px){
+    .card{
+           flex-basis: 19%;           
+      }
+     
+  }
+
+
+
+  .card-title{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .card-text{
+    font-size: 14px;
+    color: red;
+  }
+
+  .card-img-top{
+      width: 100%;
+      height: 150px;
+      
+  }
+
+
+ 
+
+
+.btn-primary{
+  bottom: 10px;
+  position: relative;
+  width: 80%;
+  padding: 0;
+  height: 40px;
+  align-items: center;
+  color: black;
+  line-height: 35px;
+  text-align: center;
+  background: white;
+  border: solid 2px black;
+  border-radius: 20px;
+}
+
+.btn-primary#s1{
+    transition: all 0.2s ease-in-out;
+    width: 60%;   
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 1;
+    
+}
+.btn-primary#s1:hover{
+    width: 80%;
+    background: black;
+    border: solid 2px black;
+}
+.btn-primary#s2{
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+    text-align: end;
+    position: absolute;
+    font-size: 0px;
+    z-index: 0;    
+    padding-inline-end: 12px;
+  
+}
+
+.btn-primary#s2 #cart1{    
+    margin-right: 50px;
+}
+
+
+.btn-primary#s2:hover{
+    background: black;
+    border: solid 2px black;    
+}
+
+
+.btn-primary#s2:hover #cart1{
+    margin-right: 0px;
+}
+
+.btn-primary#s2:hover #cart2{
+    display: none;
+}
+
+
+

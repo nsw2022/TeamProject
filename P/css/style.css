@@ -8,43 +8,45 @@
 }
 
 
+
+
+/*바디영역 임시로 채움 */
+/* body{
+    height: 100vh;
+    background:url(../image/hall-img-1.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}  */
+/* html, body{
+    height: 100%;
+}
+
+#test{
+    background:url(../image/hall-img-1.webp);
+} */
+
+
+
+
+
 /*
 box-shadow : 요소의 테두리를 감싼 그림자 정의가 가능합니다
 justify-content Day05의 05_flex-style Item들을 보통 균듕하게 할때 쓰는데 첫째랑 마지막째로 나누려고 사용했습니다 -> end로 수정
 z-index 요소의 쌓임 순서를 정의할 수 있습니다 1000안넣고 1만넣어도 위로가져요 바디영역보다 위에 쌓아서 확인해보려했습니다
 */
 header{
+    position: fixed;
     top: 0; left: 0; right: 0;
     background: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-    padding: 0 7%;
-    position: fixed;
-    display:flex; 
+    padding: 0px 7%;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 
-<<<<<<< HEAD
-=======
-/* 로그인/회원가입 위치설정 - 테스트중*/
-/*
-.top{
-    position: relative;
-    float: right;
-    
-    background-color: aqua;
-}
-*/
-
-/* 로그인/회원가입 글씨설정 
-.top a{
-    font-size: 20px;
-    padding: 20px;
-    color: #333;
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
     
 }
-*/
 
 /* 로고설정 */
 header .logo{
@@ -63,10 +65,6 @@ header .navbar ul{
 header .navbar ul li{
     position: relative;
     float:right;
-<<<<<<< HEAD
-=======
-    background-color: violet;
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
 }
 
 /* 앵커요소 설정 글씨 설정 */
@@ -102,23 +100,23 @@ header .navbar ul li ul li{
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
-/*오른쪽에나오는거 왼쪽으로이동*/
+
 header .navbar ul li ul li ul{
     left: 200px;
     top: 0;
 }
 
-/*focus 부모요소에 사용하면 내부 자식요소에 포커스된경우 스타일 지정 */
+
 header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul {
     display: initial;
 } 
 
 
-
 /* #menu-bar 사라졌다가 모바일 화면에선 나오게설정  */
 #menu-bar{
     display: none;
+    
 }
 
 header label{
@@ -128,12 +126,6 @@ header label{
     display: none;
 }
 
-
-/*
-.top ul:focus{
-    display: initial;
-}
-*/
 
 /* W3School 설정구역~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -147,34 +139,9 @@ header label{
 
 /* 데스크탑우선으로 짜봤어요 최대~까지 적용 느낌이에요 
    데스크탑 디바이스 (가로해상도가 992px 보다 작은 화면에 적용) 
-   모바일 320
-   태블릿 768
    여담으로 모바일은 min-with */
 @media(max-width:991px){
 
-<<<<<<< HEAD
-=======
-    /* 로그인/회원가입 화면 숨김 - 테스트중
-   .top{
-        position:absolute;
-        
-        display: none;
-   }
-   */
-
- 
-    
-    /* #menu-bar:checked ~ .top{
-        display: initial;
-       
-    } */
-
-    /* #menu-bar .top ~ .a{
-        display: initial;
-    }  */
-
-
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
     header{
         padding: 20px;
     }
@@ -183,7 +150,6 @@ header label{
         display: initial;
         position:absolute;
         right: 30px;
-        
     }
 
     header .navbar{
@@ -216,19 +182,5 @@ header label{
         display: initial;
     }
 
-<<<<<<< HEAD
-=======
-    #menu-bar .top ~ .a{
-        display: initial;
-    } 
-
-    .w3-container img{
-        width: 100%;
-    }
-
-   
-
-
->>>>>>> a0ea9fb7134c5de20256ff7a9adf8503dc1014a1
 
 }
