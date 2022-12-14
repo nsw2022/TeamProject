@@ -23,7 +23,6 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-
 }
 
 
@@ -39,11 +38,10 @@ header .navbar ul{
     list-style: none;
 }
 
-/* 포지션을바꾸고 정렬했습니다 float left 가 이쁘긴한데 방법 갈수*/
+/* 포지션을바꾸고 정렬했습니다 float left */
 header .navbar ul li{
-    position: relative;
-    float:right;
-    background-color: violet;
+    position:relative;
+    float: right;
 }
 
 /* 앵커요소 설정 글씨 설정 */
@@ -129,7 +127,7 @@ header label{
    여담으로 모바일은 min-with */
 @media(max-width:991px){
     header{
-        padding: 20px;
+        padding: 20px; 
     }
 
     header label{
@@ -140,7 +138,7 @@ header label{
     }
 
     header .navbar{
-        position:absolute;
+        position: absolute;
         top: 100%; left: 0; right: 0;
         background: #fff;
         border-top: 1px solid rgba(0, 0, 0, 1);
@@ -157,7 +155,7 @@ header label{
     }
 
     header .navbar ul li ul li{
-        background: #fff;
+        background: aqua;
     }
 
     header .navbar ul li ul li ul{
@@ -173,8 +171,7 @@ header label{
         display: initial;
     } 
 
-    .w3-container img{
-        width: 100%;
+    #top_banner1{
+        size: 100%;
     }
-
 }
