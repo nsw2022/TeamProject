@@ -34,8 +34,8 @@
        
         <nav class="navbar">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="./H/html/shoppingcart.html">showpping basket</a></li>
+                <li><a href="./home.html" target="frame">home</a></li>
+                <li><a href="./H/html/shoppingcart.html" target="frame">showpping basket</a></li>
                 <li><a href="./D/nav_item_set.html">soccer +</a>
                     <!-- 여기부분이 좀어려운데 css잠깐 주석처리하고 보시면 바로이해되실껍니다 li안에 ul li 넣어 DropBox처럼 보이려했습니다  -->
                     <ul>
@@ -56,106 +56,16 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="">place</a></li>
-                <li><a href="./J/login.html">Login</a></li>
-                <li><a href="./J/join.html">Join</a></li>
+                <li><a href="./P/location.html">place</a></li>
+                <li><a href="./J/login.html" target="frame">Login</a></li>
+                <li><a href="./J/join.html" target="frame">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px"></div>
-    <!-- Slideshow -->
-    <div class="w3-container">
-        <div class="w3-display-container mySlides">
-            <img id="top_banner1" src="./N/image/sweatsuit.png" style="width: 100%;">
-            <div class="w3-display-topleft w3-container w3-padding-32"></div>
-        </div>
-        <div class="w3-display-container mySlides">
-            <img src="./N/image/sportshoose.png" style="width:100%">
-            <div class="w3-display-middle w3-container w3-padding-32"></div>
-        </div>
-        <div class="w3-display-container mySlides">
-            <img src="./N/image/freesize.png" style="width:100%">
-            <div class="w3-display-topright w3-container w3-padding-32"></div>
-        </div>
-
-        <!-- Slideshow next/previous buttons -->
-        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-            <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-            <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
-            </div>
-
-            <div class="w3-center">
-                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Grid -->
-    <div class="w3-row-padding" id="about">
-        <div class="w3-center w3-padding-64">
-            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Best Product</span>
-        </div>
-
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="./dummy_data/image/ball1.png" alt="Best1" style="width:100%">
-                <div class="w3-container">
-                    <h3>Best Ball</h3>
-                    <p class="w3-opacity">Ball</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="./dummy_data/image/uni1.png" alt="Mike" style="width:100%">
-                <div class="w3-container">
-                    <h3>uni form</h3>
-                    <p class="w3-opacity">Art Director</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-third w3-margin-bottom">
-            <div class="w3-card-4">
-                <img src="./dummy_data/image/uni8.png" alt="Jane" style="width:100%">
-                <div class="w3-container">
-                    <h3>John Doe</h3>
-                    <p class="w3-opacity">Designer</p>
-                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p>This website was made with W3schools Spaces. Make your own free website today!</p>
-   
-   <!-- Footer end. -->
-   </footer>
+    <iframe src="./home.html" frameborder="0" name="frame" style="display:block; width:100%; height: 900vh;"></iframe>
+        
+    
     <script>
         // Slideshow
         var slideIndex = 1;
