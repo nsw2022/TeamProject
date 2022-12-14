@@ -46,23 +46,26 @@
                 color: white;
                 border: 1px solid white;
             }
-
-
-
-
-
-
-
+            
+            @media all and (min-width: 320px){
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            
         </style>
     </head>
 
     <body>
-        <p>로그인</p>
-        <div style="float: inline-start;">
-            <input type="radio" checked >회원
-            <input type="radio" value="비회원">비회원
-        </div>
-    
+        <fieldset>
+            <legend>로그인</legend>
+            <div style="float: inline-start;">
+                <input type="radio" checked >회원
+                <input type="radio" value="비회원">비회원
+            </div>
+        
+
 
             <div id="main2Left" style="float: left;" >
                 <!-- 로그인 입력 부분-->
@@ -90,6 +93,10 @@
             <input id="login_btn" value="회원 로그인">
         </div>
         
+        </fieldset>
+     
+
+       
       
       
     </body>
