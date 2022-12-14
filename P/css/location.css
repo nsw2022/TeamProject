@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+
+ul,li {list-style:none;}
+
 #map{
     float: left;
     width: 85%;
@@ -19,22 +22,23 @@
     float: right;
     width: 15%;
     height: 100%;
-    padding-top: 150px;
-    border: 3px solid black;
-    
+    margin-top: 110px;
+    border: 2px solid black;
+}
+
+#search_menu{
+    font-size: 14px;
+    margin-left: 8px;
 }
 
 nav{
     font-size: 20px;
 }
 
-
-ul.option_item{
-    display: none;
-}
-
 .item{
     margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 
@@ -43,11 +47,33 @@ input[type="checkbox"] {
     display: none;
   }
 
-li #option:checked ~ .option_item{
-    display: initial;
-    color: black;
-    text-align: center;
+#input{
+    width: 90%;
+    height: 26px;
+    
 }
+
+li #option:checked ~ .option_item{
+    display: none;
+    color: black;
+}
+
+.search_item{
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.search_item_sub{
+    font-size: 10px;
+    margin-left: 8px;
+    line-height: 16px;
+    color: gray;
+}
+
+.search_item_sub a{
+    display: inline-block; width: 160px;
+}
+
 
 
 

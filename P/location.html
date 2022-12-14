@@ -4,11 +4,16 @@
         <meta charset="utf-8">
         <title>위치정보</title>
 
-        
+        <!-- 헤더 css파일 -->
+        <link rel="stylesheet" href="../N/css/style.css"> 
 
-        <!-- css파일 -->
-        <link rel="stylesheet" href="../N/css/style.css">
-        <link rel="stylesheet" href="./css/location.css">
+        <!-- 데스크탑 css -->
+        <link rel="stylesheet" href="./css/location.css" media="(min-width: 991px)">  
+
+        <!-- 모바일 css -->
+        <link rel="stylesheet" href="./css/location_mobile.css" media="(max-width:990px)">
+
+        
 
         <!-- W3Shool Library-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,24 +40,81 @@
             <nav >
                 <ul id="location_search">
                     <li>
-                        <input type="checkbox" href="" id="option"></a>
-                        <label for="option">Menu</label>
-                        
+                        <div style="text-align: center; margin-bottom: 10px;">
+                            <input type="checkbox" href="" id="option" style="text-align: center;"></a>
+                            <label for="option" id="search_menu"><strong>메뉴 검색</strong></label>
+                        </div>
                         <ul class="option_item">
-                            <li><a href="" class="item">검색결과</a></li>
-                            <li><a href="" class="item">검색결과</a></li>
-                            <li><a href="" class="item">검색결과</a></li>
-                            <li><a href="" class="item">검색결과</a></li>
-                            <li><a href="" class="item">검색결과</a></li>
-                            <li><a href="" class="item">검색결과</a></li>
-                            
+                            <li class="item">
+                                <input type="text" id="input">
+                            </li>
+                            <li style="padding: 12px; font-size: 12px; background-color: rgb(241, 241, 241);">검색결과</li>
+                            <ul><br>
+                                <li><a href="" class="search_item">광화문</a></li>
+                                <li class="search_item_sub">
+                                    <a href="">
+                                        서울 종로구 세종대로23길 7 (세종로)
+                                    </a>
+                                    <img src="./image/marker.png" alt="이미지" style="width: 20px; height: 26px;" class="img_marker">
+                                </li>
+                                <li class="search_item_sub"><a href="">02-738-9870</a></li>
+                                <hr>
+                                
+                            </ul>
+                            <ul> 
+                                <li><a href="" class="search_item">청계천</a></li>
+                                <li class="search_item_sub">
+                                    <a href="">
+                                        서울 종로구 청계천로 35 (서린동) 관정빌딩 1층
+                                    </a>
+                                    <img src="./image/marker.png" alt="이미지" style="width: 20px; height: 26px;" class="img_marker">
+                                </li>
+                                <li class="search_item_sub"><a href="">02-720-7947</a></li>
+                                <hr>
+                            </ul>    
+                            <ul> 
+                                <li><a href="" class="search_item">충무로역</a></li>
+                                <li class="search_item_sub">
+                                    <a href="">
+                                        서울 중구 퇴계로 213 (충무로4가)
+                                    </a>
+                                    <img src="./image/marker.png" alt="이미지" style="width: 20px; height: 26px;" class="img_marker">
+                                </li>
+                                <li class="search_item_sub"><a href="">02-2275-1661</a></li>
+                                <hr>
+                            </ul>
+                            <ul> 
+                                <li><a href="" class="search_item">수영역</a></li>
+                                <li class="search_item_sub">
+                                    <a href="">
+                                        부산 수영구 수영로 700 (광안동, 베스테이 센트럴뷰)
+                                    </a>
+                                    <img src="./image/marker.png" alt="이미지" style="width: 20px; height: 26px;" class="img_marker">
+                                </li>
+                                <li class="search_item_sub"><a href="">051-754-4651</a></li>
+                                <hr>
+                            </ul>
+                            <ul> 
+                                <li><a href="" class="search_item">제주시청</a></li>
+                                <li class="search_item_sub">
+                                    <a href="">
+                                        제주특별자치도 제주시 중앙로 291 (이도이동)
+                                    </a>
+                                    <img src="./image/marker.png" alt="이미지" style="width: 20px; height: 26px;" class="img_marker">
+                                </li>
+                                <li class="search_item_sub"><a href="">064-803-0877</a></li>
+                            </ul>
                         </ul>
+                        
+                        
                     </li>
 
                 </ul>
                 
+                
             </nav>
         </div>
+        <hr>
 
         <!-- Kakao 지도 라이브러리 적용 [ 카카오 개발자사이트에 있는 JS 키 등록 ] -->
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b2701db366a5266498c74dbdc6e40b5c"></script>
